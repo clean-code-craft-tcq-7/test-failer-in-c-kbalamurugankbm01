@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include <assert.h>
 #include "misaligned.h"
 
 int main() {
