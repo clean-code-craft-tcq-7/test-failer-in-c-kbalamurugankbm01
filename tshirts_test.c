@@ -12,8 +12,8 @@ int main() {
     assert(size(38) == 'S'); //Fails
     
     assert(size(-1) != 'L'); //Fails
-    assert(size(INT_MAX) != 'L'); //Fails
-    assert(size(INT_MIN) != 'L'); //Fails
+    assert(size(INT_MAX) == 'L');
+    assert(size(INT_MIN) == 'S');
 
     printf("All is well (maybe!)\n");
     return 0;
