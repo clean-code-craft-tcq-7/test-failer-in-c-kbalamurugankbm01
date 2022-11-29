@@ -24,8 +24,12 @@ void alertInCelcius(float farenheit) {
 }
 
 int main() {
+    
+    assert(alertFailureCount == 0);
     alertInCelcius(400.5);
+    assert(alertFailureCount == 1);
     alertInCelcius(303.6);
+    assert(alertFailureCount == 2);
 
     assert(alertFailureCount != 0);
     
