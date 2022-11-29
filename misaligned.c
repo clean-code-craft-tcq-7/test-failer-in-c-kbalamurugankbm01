@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include <limits.h>
 
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
@@ -16,7 +17,11 @@ int printColorMap() {
 int main() {
     int result = printColorMap();
     assert(result == 25);
-    // assert(result == 16);
+
+    assert(result == 0); //Fails
+    assert(result == INT_MIN); //Fails
+    assert(result == INT_MAX); //Fails
+    
     printf("All is well (maybe!)\n");
     return 0;
 }
