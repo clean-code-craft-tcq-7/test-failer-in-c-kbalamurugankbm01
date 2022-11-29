@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <assert.h>
-#include <limits.h>
+#include "misaligned.h"
 
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
@@ -12,16 +11,4 @@ int printColorMap() {
         }
     }
     return i * j;
-}
-
-int main() {
-    int result = printColorMap();
-    assert(result == 25);
-
-    assert(result == 0); //Fails
-    assert(result == INT_MIN); //Fails
-    assert(result == INT_MAX); //Fails
-    
-    printf("All is well (maybe!)\n");
-    return 0;
 }
