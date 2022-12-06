@@ -16,5 +16,6 @@ int main() {
     assert(size(INT_MIN) == 'S');
 
     printf("All is well (maybe!)\n");
+    printf("Test");
     return 0;
 }
