@@ -4,18 +4,21 @@
 #include "tshirts.h"
 
 int main() {
+
+    //Range Cases
     assert(size(37) == 'S');
     assert(size(40) == 'M');
     assert(size(43) == 'L');
+    assert(size(42) == 'M');
+    assert(size(38) == 'S');
+    assert(size(1) == 'S');
 
-    assert(size(42) == 'M'); //Fails
-    assert(size(38) == 'S'); //Fails
-    
-    assert(size(-1) != 'L'); //Fails
+    //Boundary Cases
+    assert(size(0) == '\0');
+    assert(size(-1) == '\0');
     assert(size(INT_MAX) == 'L');
-    assert(size(INT_MIN) == 'S');
+    assert(size(INT_MIN) == '\0');
 
     printf("All is well (maybe!)\n");
-    printf("Test");
     return 0;
 }
