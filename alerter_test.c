@@ -4,7 +4,7 @@
 
 int main() {
     //Assertion for the Stub Code Failure count does not increment
-    /*
+    
     assert(alertFailureCount == 0);
     alertInCelcius(networkAlertStub, 0.0);
     assert(alertFailureCount == 0);
@@ -14,7 +14,6 @@ int main() {
     assert(alertFailureCount == 0);
     alertInCelcius(networkAlertStub, 1000.0);
     assert(alertFailureCount == 0);
-*/
 
     //Assertion for the Network Code Failure count does increment
     /*
