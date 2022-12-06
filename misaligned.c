@@ -3,6 +3,8 @@
 #include "misaligned.h"
 
 ColorPair colorPairList[MAX_COLOR_PAIR_COUNT];
+const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
+const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
 void printColorMap() {
     int size, i;
@@ -14,8 +16,7 @@ void printColorMap() {
 }
 
 int fillColorMapList() {
-    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
-    const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+
     int i = 0, j = 0;
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {

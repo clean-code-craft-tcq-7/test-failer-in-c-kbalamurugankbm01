@@ -13,5 +13,7 @@ extern void printColorMap();
 int fillColorMapList();
 
 extern ColorPair colorPairList[MAX_COLOR_PAIR_COUNT];
+extern const char* majorColor[];
+extern const char* minorColor[];
 
 #endif /*MISALIGNED_H*/
